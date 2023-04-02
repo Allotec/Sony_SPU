@@ -1,0 +1,28 @@
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" VHDL cell_cpu 2 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd" VHDL cell_cpu 2 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd" VHDL cell_cpu 2 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd" VHDL cell_cpu 1 0 0 -02
+"C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd" VHDL cell_cpu 1 0 0 -02
+. . 0 0 0

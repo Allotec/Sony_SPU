@@ -1,0 +1,512 @@
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPIMAPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# Error: COMP96_0078: Pipes/SPIMAPipe.vhd : (127, 13): Unknown identifier "reWriteOut".
+# Error: COMP96_0133: Pipes/SPIMAPipe.vhd : (127, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/SPIMAPipe.vhd : (127, 13): "reWriteOut" does not match the formal name.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPIMAPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# Error: COMP96_0219: Pipes/SPIMAPipe.vhd : (127, 13): Port "regWriteOut" is already assigned.
+# Error: COMP96_0219: Pipes/SPIMAPipe.vhd : (128, 13): Port "rtOut" is already assigned.
+# Error: COMP96_0219: Pipes/SPIMAPipe.vhd : (129, 13): Port "resultOut" is already assigned.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPIMAPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPIMAPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPIMAPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPFPPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Error: COMP96_0015: Pipes/SPFPPipe.vhd : (25, 9): ';' expected.
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# Error: COMP96_0078: Pipes/SPFPPipe.vhd : (139, 9): Unknown identifier "regWriteOutF".
+# Error: COMP96_0133: Pipes/SPFPPipe.vhd : (139, 9): Cannot find object declaration.
+# Error: COMP96_0078: Pipes/SPFPPipe.vhd : (140, 9): Unknown identifier "rtOutF".
+# Error: COMP96_0133: Pipes/SPFPPipe.vhd : (140, 9): Cannot find object declaration.
+# Error: COMP96_0078: Pipes/SPFPPipe.vhd : (141, 9): Unknown identifier "resultOutF".
+# Error: COMP96_0133: Pipes/SPFPPipe.vhd : (141, 9): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SPFPPipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/BytePipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SF2Pipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/SF1Pipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/PermutePipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/Pipes/LocalStore.vhd $dsn/src/Pipes/shiftPipeLS.vhd $dsn/src/Pipes/PermutePipe.vhd $dsn/src/Pipes/BranchPipe.vhd $dsn/src/Pipes/LSPipe.vhd $dsn/src/Pipes/shiftPipe.vhd $dsn/src/Pipes/SPIMAPipe.vhd $dsn/src/Pipes/SPFPPipe.vhd $dsn/src/Pipes/BytePipe.vhd $dsn/src/Pipes/SF2Pipe.vhd $dsn/src/Pipes/SF1Pipe.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Error: COMP96_0018: Pipes/shiftPipeLS.vhd : (29, 9): Identifier expected.
+# Compile Architecture "structural" of Entity "shiftPipeLS"
+# Error: COMP96_0056: Pipes/shiftPipeLS.vhd : (33, 1): Cannot find referenced entity declaration "shiftPipeLS".
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Error: COMP96_0111: Pipes/shiftPipeLS.vhd : (166, 5): Labels do not match.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (75, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (78, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (75, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (75, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (88, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (91, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (88, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (88, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (101, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (104, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (101, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (101, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (114, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (117, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (114, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (114, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (127, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (130, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (127, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (127, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (146, 13): Unknown identifier "clk".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (147, 13): Unknown identifier "valMem".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (146, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (146, 13): "clk" does not match the formal name.
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "clock".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "regWrite".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "rt".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "result".
+# Compile failure 28 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (69, 13): Unknown identifier "clk".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (69, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (69, 13): "clk" does not match the formal name.
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (68, 9): No actual specified for local port "clock".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (68, 9): No actual specified for local port "valMem".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (68, 9): No actual specified for local port "regWrite".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (68, 9): No actual specified for local port "rt".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (68, 9): No actual specified for local port "address".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (88, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (91, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (88, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (88, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (101, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (104, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (101, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (101, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (114, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (117, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (114, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (114, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (127, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (130, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (127, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (127, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (146, 13): Unknown identifier "clk".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (147, 13): Unknown identifier "valMem".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (146, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (146, 13): "clk" does not match the formal name.
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "clock".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "regWrite".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "rt".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "result".
+# Compile failure 32 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (88, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (91, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (88, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (88, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (101, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (104, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (101, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (101, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (114, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (117, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (114, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (114, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (127, 13): Unknown identifier "valMemOut".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (130, 13): Unknown identifier "addressOut".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (127, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (127, 13): "valMemOut" does not match the formal name.
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (146, 13): Unknown identifier "clk".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (147, 13): Unknown identifier "valMem".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (146, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (146, 13): "clk" does not match the formal name.
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "clock".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "regWrite".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "rt".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "result".
+# Compile failure 24 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (146, 13): Unknown identifier "clk".
+# Error: COMP96_0078: Pipes/shiftPipeLS.vhd : (147, 13): Unknown identifier "valMem".
+# Error: COMP96_0133: Pipes/shiftPipeLS.vhd : (146, 13): Cannot find object declaration.
+# Error: COMP96_0112: Pipes/shiftPipeLS.vhd : (146, 13): "clk" does not match the formal name.
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "clock".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "regWrite".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "rt".
+# Error: COMP96_0207: Pipes/shiftPipeLS.vhd : (145, 9): No actual specified for local port "result".
+# Compile failure 8 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Pipes/shiftPipeLS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Pipes/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/EvenWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Error: COMP96_0015: Even Units/EvenWriteBack.vhd : (41, 9): ';' expected.
+# Error: COMP96_0018: Even Units/EvenWriteBack.vhd : (44, 5): Identifier expected.
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# Error: COMP96_0056: Even Units/EvenWriteBack.vhd : (47, 1): Cannot find referenced entity declaration "ShiftPickerEven".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/EvenWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Error: COMP96_0018: Even Units/EvenWriteBack.vhd : (44, 5): Identifier expected.
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# Error: COMP96_0056: Even Units/EvenWriteBack.vhd : (47, 1): Cannot find referenced entity declaration "ShiftPickerEven".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/EvenWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# Error: COMP96_0056: Even Units/EvenWriteBack.vhd : (47, 1): Cannot find referenced entity declaration "ShiftPickerEven".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/EvenWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/ShiftPickerEven.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd
+# Compile Entity "ShiftPickerEven"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftPickerOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Error: COMP96_0015: Odd Units/ShiftPickerOdd.vhd : (26, 9): ';' expected.
+# Error: COMP96_0015: Odd Units/ShiftPickerOdd.vhd : (31, 9): ';' expected.
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# Error: COMP96_0056: Odd Units/ShiftPickerOdd.vhd : (37, 1): Cannot find referenced entity declaration "ShiftPickerOdd".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftPickerOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# Error: COMP96_0264: Odd Units/ShiftPickerOdd.vhd : (39, 24): Signal "result" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: Odd Units/ShiftPickerOdd.vhd : (59, 37): Cannot read output : "result".
+# Error: COMP96_0393: Odd Units/ShiftPickerOdd.vhd : (63, 36): Cannot read output : "result".
+# Error: COMP96_0393: Odd Units/ShiftPickerOdd.vhd : (67, 36): Cannot read output : "result".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftPickerOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/ShiftEven.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd" is empty.
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/EvenWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/OddWriteBack.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd
+# Compile Entity "OddWriteBack"
+# Compile Architecture "Behavioral" of Entity "OddWriteBack"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftPickerOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd" is empty.
+# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/ShiftEven.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Error: COMP96_0015: Even Units/ShiftEven.vhd : (32, 1): ';' expected.
+# Error: COMP96_0019: Even Units/ShiftEven.vhd : (32, 5): Keyword 'end' expected.
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# Error: COMP96_0056: Even Units/ShiftEven.vhd : (34, 1): Cannot find referenced entity declaration "ShiftEven".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Even Units/ShiftEven.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftEven"
+# Error: COMP96_0059: Odd Units/ShiftOdd.vhd : (1, 1): Library "IEEO" not found.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (2, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (3, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (4, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (5, 5): Unknown identifier "ieee".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (13, 20): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (13, 20): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (15, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (15, 21): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (16, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (16, 18): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (17, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (17, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (18, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (18, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (19, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (19, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (20, 20): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (20, 20): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (21, 24): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (21, 24): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (24, 24): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (24, 24): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (25, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (25, 21): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (26, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (26, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (27, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (27, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (28, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (28, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (29, 23): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (29, 23): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (30, 27): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (30, 27): Unknown type.
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (39, 21): Unknown identifier "ALUopOOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (39, 33): Unknown identifier "ALUopO".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (39, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (40, 21): Unknown identifier "I7OOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (40, 30): Unknown identifier "I7O".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (40, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (41, 21): Unknown identifier "I10OOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (41, 31): Unknown identifier "I10O".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (41, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (42, 21): Unknown identifier "I16OOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (42, 31): Unknown identifier "I16O".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (42, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (43, 21): Unknown identifier "I18OOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (43, 31): Unknown identifier "I18O".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (43, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (44, 21): Unknown identifier "typeOOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (44, 32): Unknown identifier "typeO".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (44, 21): Cannot find object declaration.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (45, 21): Unknown identifier "regWriteOOut".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (45, 36): Unknown identifier "regWriteO".
+# Error: COMP96_0133: Odd Units/ShiftOdd.vhd : (45, 21): Cannot find object declaration.
+# Compile failure 56 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Error: COMP96_0059: Odd Units/ShiftOdd.vhd : (1, 1): Library "IEEO" not found.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (2, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (3, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (4, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (5, 5): Unknown identifier "ieee".
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (13, 20): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (13, 20): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (15, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (15, 21): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (16, 18): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (16, 18): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (17, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (17, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (18, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (18, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (19, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (19, 19): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (20, 20): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (20, 20): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (21, 24): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (21, 24): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (24, 24): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (24, 24): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (25, 21): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (25, 21): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (26, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (26, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (27, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (27, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (28, 22): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (28, 22): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (29, 23): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (29, 23): Unknown type.
+# Error: COMP96_0078: Odd Units/ShiftOdd.vhd : (30, 27): Unknown identifier "std_logic".
+# Error: COMP96_0064: Odd Units/ShiftOdd.vhd : (30, 27): Unknown type.
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# Error: COMP96_0056: Odd Units/ShiftOdd.vhd : (34, 1): Cannot find referenced entity declaration "ShiftOdd".
+# Compile failure 36 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Odd Units/ShiftOdd.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]

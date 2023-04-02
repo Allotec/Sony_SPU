@@ -1,0 +1,27 @@
+.\src\ALU.vhd
+.\src\ALU_tb.vhd
+.\src\Constants.vhd
+.\src\FowardingUnit.vhd
+.\src\ALUPortDecode.vhd
+.\src\RegisterFile.vhd
+.\src\InstructionFetchDecode.vhd
+.\src\Even Units\ShiftEven.vhd
+.\src\Even Units\ShiftPickerEven.vhd
+.\src\Even Units\EvenWriteBack.vhd
+.\src\Even Units\shiftPipe.vhd
+.\src\Even Units\SPIMAPipe.vhd
+.\src\Even Units\SPFPPipe.vhd
+.\src\Even Units\BytePipe.vhd
+.\src\Even Units\SF2Pipe.vhd
+.\src\Even Units\SF1Pipe.vhd
+.\src\Odd Units\ShiftOdd.vhd
+.\src\Odd Units\ShiftPickerOdd.vhd
+.\src\Odd Units\OddWriteBack.vhd
+.\src\Odd Units\LSPipe.vhd
+.\src\Odd Units\BranchPipe.vhd
+.\src\Odd Units\PermutePipe.vhd
+.\src\Odd Units\shiftPipeLS.vhd
+.\src\Odd Units\LocalStore.vhd
+.\src\Instruction Fetch\InstructionBuffer.vhd
+.\src\Instruction Fetch\ProgramCounter.vhd
+.\src\Instruction Fetch\InstructionFetchUnit.vhd

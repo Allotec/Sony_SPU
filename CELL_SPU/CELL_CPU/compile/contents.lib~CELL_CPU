@@ -1,0 +1,47 @@
+112
+~E 1 "../src/ALU.vhd" 10 ALU
+~A 1 "../src/ALU.vhd" 25 Behavioral
+~E 1 "../src/Pipes/BranchPipe.vhd" 10 BranchPipe
+~A 1 "../src/Odd Units/BranchPipe.vhd" 28 structure
+~E 1 "../src/Pipes/BytePipe.vhd" 10 BytePipe
+~A 1 "../src/Even Units/BytePipe.vhd" 33 structure
+~E 1 "../src/Even Units/EvenWriteBack.vhd" 10 EvenWriteBack
+~A 1 "../src/Even Units/EvenWriteBack.vhd" 47 Behavioral
+~E 1 "../src/Instruction Fetch/InstructionBuffer.vhd" 10 InstructionBuffer
+~A 1 "../src/Instruction Fetch/InstructionBuffer.vhd" 26 behavioral
+~E 1 "../src/InstructionFetchDecode.vhd" 10 InstructionFetchDecode
+~A 1 "../src/InstructionFetchDecode.vhd" 49 Behavioral
+~E 1 "../src/Instruction Fetch/InstructionFetchUnit.vhd" 10 InstructionFetchUnit
+~A 1 "../src/Instruction Fetch/InstructionFetchUnit.vhd" 29 structure
+~E 1 "../src/Pipes/LocalStore.vhd" 10 LocalStore
+~A 1 "../src/Odd Units/LocalStore.vhd" 31 Behavioral
+~E 1 "../src/Pipes/LSPipe.vhd" 10 LSPipe
+~A 1 "../src/Odd Units/LSPipe.vhd" 28 Behavioral
+~E 1 "../src/Odd Units/OddWriteBack.vhd" 10 OddWriteBack
+~A 1 "../src/Odd Units/OddWriteBack.vhd" 38 Behavioral
+~E 1 "../src/Pipes/PermutePipe.vhd" 10 PermutePipe
+~A 1 "../src/Odd Units/PermutePipe.vhd" 34 structure
+~E 1 "../src/Instruction Fetch/ProgramCounter.vhd" 10 ProgramCounter
+~A 1 "../src/Instruction Fetch/ProgramCounter.vhd" 25 behavioral
+~E 1 "../src/RegisterFile.vhd" 11 RegisterFile
+~A 1 "../src/RegisterFile.vhd" 52 behavioral
+~E 1 "../src/Pipes/SF1Pipe.vhd" 10 SF1Pipe
+~A 1 "../src/Even Units/SF1Pipe.vhd" 33 structure
+~E 1 "../src/Pipes/SF2Pipe.vhd" 10 SF2Pipe
+~A 1 "../src/Even Units/SF2Pipe.vhd" 34 structure
+~E 1 "../src/Even Units/ShiftEven.vhd" 10 ShiftEven
+~A 1 "../src/Even Units/ShiftEven.vhd" 34 Behavioral
+~E 1 "../src/Odd Units/ShiftOdd.vhd" 10 ShiftOdd
+~A 1 "../src/Odd Units/ShiftOdd.vhd" 34 Behavioral
+~E 1 "../src/Even Units/ShiftPickerEven.vhd" 10 ShiftPickerEven
+~A 1 "../src/Even Units/ShiftPickerEven.vhd" 46 Behavioral
+~E 1 "../src/Odd Units/ShiftPickerOdd.vhd" 10 ShiftPickerOdd
+~A 1 "../src/Odd Units/ShiftPickerOdd.vhd" 37 Behavioral
+~E 1 "../src/Pipes/shiftPipe.vhd" 10 shiftPipe
+~A 1 "../src/Even Units/shiftPipe.vhd" 26 Behavioral
+~E 1 "../src/Pipes/shiftPipeLS.vhd" 10 shiftPipeLS
+~A 1 "../src/Odd Units/shiftPipeLS.vhd" 33 structure
+~E 1 "../src/Pipes/SPFPPipe.vhd" 10 SPFPPipe
+~A 1 "../src/Even Units/SPFPPipe.vhd" 33 structure
+~E 1 "../src/Pipes/SPIMAPipe.vhd" 10 SPIMAPipe
+~A 1 "../src/Even Units/SPIMAPipe.vhd" 33 structure
