@@ -12,30 +12,39 @@ entity EvenWriteBack is
         --Inputs
         clock : in std_logic;
 
+        --Control signals from branch unit
+        blockIn : in std_logic;
+        branchIndex : in std_logic_vector(7 downto 0);
+
         --Inputs for pipe 0
         regWriteSPIMA : in std_logic;
         rtSPIMA : in std_logic_vector(6 downto 0);
         resultSPIMA : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountSPIMA : in std_logic_vector(7 downto 0);
         
         --Inputs for pipe 1
         regWriteSPFP : in std_logic;
         rtSPFP : in std_logic_vector(6 downto 0);
         resultSPFP : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountSPFP : in std_logic_vector(7 downto 0);
         
         --Inputs for pipe 2
         regWriteB : in std_logic;
         rtB : in std_logic_vector(6 downto 0);
         resultB : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountB : in std_logic_vector(7 downto 0);
         
         --Inputs for pipe 3
         regWriteSF2 : in std_logic;
         rtSF2 : in std_logic_vector(6 downto 0);
         resultSF2 : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountSF2 : in std_logic_vector(7 downto 0);
         
         --Inputs for pipe 4
         regWriteSF1 : in std_logic;
         rtSF1 : in std_logic_vector(6 downto 0);
         resultSF1 : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountSF1 : in std_logic_vector(7 downto 0);
 
         --Ouputs
         regWriteR : out std_logic;
@@ -49,23 +58,23 @@ architecture Behavioral of EvenWriteBack is
         WriteBack : process(clock) 
         begin 
             if(rising_edge(clock)) then
-                if(regWriteSPIMA = '1') then
+                if(regWriteSPIMA = '1' and ((blockIn = '1' and instructionCountSPIMA < branchIndex) or blockIn = '0')) then
                     regWriteR <= regWriteSPIMA;
                     rtR <= rtSPIMA;
                     resultR <= resultSPIMA;
-                elsif(regWriteSPFP = '1') then
+                elsif(regWriteSPFP = '1' and ((blockIn = '1' and instructionCountSPFP < branchIndex) or blockIn = '0')) then
                     regWriteR <= regWriteSPFP;
                     rtR <= rtSPFP;
                     resultR <= resultSPFP;
-                elsif(regWriteB = '1') then
+                elsif(regWriteB = '1' and ((blockIn = '1' and instructionCountB < branchIndex) or blockIn = '0')) then
                     regWriteR <= regWriteB;
                     rtR <= rtB;
                     resultR <= resultB;
-                elsif(regWriteSF2 = '1') then
+                elsif(regWriteSF2 = '1' and ((blockIn = '1' and instructionCountSF2 < branchIndex) or blockIn = '0')) then
                     regWriteR <= regWriteSF2;
                     rtR <= rtSF2;
                     resultR <= resultSF2;
-                elsif(regWriteSF1 = '1') then
+                elsif(regWriteSF1 = '1' and ((blockIn = '1' and instructionCountSF1 < branchIndex) or blockIn = '0')) then
                     regWriteR <= regWriteSF1;
                     rtR <= rtSF1;
                     resultR <= resultSF1;

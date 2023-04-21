@@ -4,7 +4,6 @@
 .\src\FowardingUnit.vhd
 .\src\ALUPortDecode.vhd
 .\src\RegisterFile.vhd
-.\src\InstructionFetchDecode.vhd
 .\src\Even Units\ShiftEven.vhd
 .\src\Even Units\ShiftPickerEven.vhd
 .\src\Even Units\EvenWriteBack.vhd
@@ -18,10 +17,10 @@
 .\src\Odd Units\ShiftPickerOdd.vhd
 .\src\Odd Units\OddWriteBack.vhd
 .\src\Odd Units\LSPipe.vhd
+.\src\Odd Units\BranchPipe.vhd
 .\src\Odd Units\PermutePipe.vhd
 .\src\Odd Units\shiftPipeLS.vhd
 .\src\Odd Units\LocalStore.vhd
-.\src\Odd Units\BranchUnit.vhd
 .\src\Instruction Fetch\InstructionBuffer.vhd
 .\src\Instruction Fetch\ProgramCounter.vhd
 .\src\Instruction Fetch\InstructionFetchUnit.vhd

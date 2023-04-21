@@ -17,8 +17,12 @@ entity InstructionBuffer is
         imWrite : in std_logic; --Only used to load values initially
 
         --Outputs
-        instructionOdd : out std_logic_vector(const.WORDSIZE - 1 downto 0);
-        instructionEven : out std_logic_vector(const.WORDSIZE - 1 downto 0)
+        --The instruction and the index in the memory
+        instruction1 : out std_logic_vector(const.WORDSIZE - 1 downto 0);
+        instructionCount1 : out std_logic_vector(7 downto 0);
+
+        instruction2 : out std_logic_vector(const.WORDSIZE - 1 downto 0);
+        instructionCount2 : out std_logic_vector(7 downto 0)
     );
 end InstructionBuffer;
 
@@ -34,8 +38,16 @@ begin
                 if(imWrite = '1') then
                     instructionMemory(to_integer(unsigned(addressIn))) <= dataIn(const.WORDSIZE - 1 downto 0);
                 else
-                    instructionOdd <= instructionMemory(to_integer(unsigned(count(7 downto 0))));
-                    instructionEven <= instructionMemory(to_integer(unsigned(count(7 downto 0))) + 1);
+                    instruction1 <= instructionMemory(to_integer(unsigned(count(7 downto 0))));
+                    instructionCount1 <= count;
+                    instruction2 <= instructionMemory(to_integer(unsigned(count(7 downto 0))) + 1);
+                    instructionCount2 <= std_logic_vector(
+                                            to_unsigned(
+                                                to_integer(unsigned(count)) + 1
+                                                ,
+                                                8
+                                            )
+                                        );
                 end if;
             end if;
     end process;

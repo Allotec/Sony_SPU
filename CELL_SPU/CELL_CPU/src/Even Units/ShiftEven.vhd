@@ -19,6 +19,7 @@ entity ShiftEven is
         I18E : in std_logic_vector(17 downto 0);
         typeE : in std_logic_vector(2 downto 0);
         regWriteE : in std_logic;
+        instructionCountE : in std_logic_vector(7 downto 0);
 
         --Outputs
         ALUopEOut : out std_logic_vector(6 downto 0);
@@ -27,6 +28,7 @@ entity ShiftEven is
         I16EOut : out std_logic_vector(15 downto 0);
         I18EOut : out std_logic_vector(17 downto 0);
         typeEOut : out std_logic_vector(2 downto 0);
+        instructionCountEOut : out std_logic_vector(7 downto 0);
         regWriteEOut : out std_logic
     );
 end ShiftEven;
@@ -42,6 +44,7 @@ architecture Behavioral of ShiftEven is
                     I16EOut <= I16E;
                     I18EOut <= I18E;
                     typeEOut <= typeE;
+                    instructionCountEOut <= instructionCountE;
                     regWriteEOut <= regWriteE;
                 end if;
             end process;

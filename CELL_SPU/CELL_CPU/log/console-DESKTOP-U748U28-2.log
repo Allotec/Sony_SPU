@@ -1,0 +1,1256 @@
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/FowardingUnit.vhd $dsn/src/ALUPortDecode.vhd $dsn/src/RegisterFile.vhd "$dsn/src/Even Units/ShiftEven.vhd" "$dsn/src/Even Units/ShiftPickerEven.vhd" "$dsn/src/Even Units/EvenWriteBack.vhd" "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd" "$dsn/src/Odd Units/ShiftOdd.vhd" "$dsn/src/Odd Units/ShiftPickerOdd.vhd" "$dsn/src/Odd Units/OddWriteBack.vhd" "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd" "$dsn/src/Instruction Fetch/InstructionBuffer.vhd" "$dsn/src/Instruction Fetch/ProgramCounter.vhd" "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Error: COMP96_0015: RegisterFile.vhd : (17, 19): ')' expected.
+# Error: COMP96_0015: RegisterFile.vhd : (17, 19): ';' expected.
+# Error: COMP96_0019: RegisterFile.vhd : (17, 21): Keyword 'end' expected.
+# Error: COMP96_0015: RegisterFile.vhd : (17, 21): ';' expected.
+# Error: COMP96_0016: RegisterFile.vhd : (17, 24): Design unit declaration expected.
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# Too many errors - compilation terminated
+# Error: COMP96_0078: RegisterFile.vhd : (61, 20): Unknown identifier "addressAO".
+# Error: COMP96_0078: RegisterFile.vhd : (61, 32): Unknown identifier "regAddressE".
+# Error: COMP96_0078: RegisterFile.vhd : (61, 48): Unknown identifier "regWriteE".
+# Error: COMP96_0133: RegisterFile.vhd : (61, 48): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (61, 20): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (61, 19): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (62, 21): Unknown identifier "valueAO".
+# Error: COMP96_0078: RegisterFile.vhd : (62, 32): Unknown identifier "regDataE".
+# Error: COMP96_0133: RegisterFile.vhd : (62, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (63, 23): Unknown identifier "addressAO".
+# Error: COMP96_0078: RegisterFile.vhd : (63, 35): Unknown identifier "regAddressO".
+# Error: COMP96_0078: RegisterFile.vhd : (63, 51): Unknown identifier "regWriteO".
+# Error: COMP96_0133: RegisterFile.vhd : (63, 51): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (63, 23): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (63, 22): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (64, 21): Unknown identifier "valueAO".
+# Error: COMP96_0078: RegisterFile.vhd : (64, 32): Unknown identifier "regDataO".
+# Error: COMP96_0133: RegisterFile.vhd : (64, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (66, 21): Unknown identifier "valueAO".
+# Error: COMP96_0078: RegisterFile.vhd : (66, 60): Unknown identifier "addressAO".
+# Error: COMP96_0133: RegisterFile.vhd : (66, 60): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (66, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (70, 20): Unknown identifier "addressBO".
+# Error: COMP96_0078: RegisterFile.vhd : (70, 32): Unknown identifier "regAddressE".
+# Error: COMP96_0078: RegisterFile.vhd : (70, 48): Unknown identifier "regWriteE".
+# Error: COMP96_0133: RegisterFile.vhd : (70, 48): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (70, 20): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (70, 19): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (71, 21): Unknown identifier "valueBO".
+# Error: COMP96_0078: RegisterFile.vhd : (71, 32): Unknown identifier "regDataE".
+# Error: COMP96_0133: RegisterFile.vhd : (71, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (72, 23): Unknown identifier "addressBO".
+# Error: COMP96_0078: RegisterFile.vhd : (72, 35): Unknown identifier "regAddressO".
+# Error: COMP96_0078: RegisterFile.vhd : (72, 51): Unknown identifier "regWriteO".
+# Error: COMP96_0133: RegisterFile.vhd : (72, 51): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (72, 23): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (72, 22): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (73, 21): Unknown identifier "valueBO".
+# Error: COMP96_0078: RegisterFile.vhd : (73, 32): Unknown identifier "regDataO".
+# Error: COMP96_0133: RegisterFile.vhd : (73, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (75, 21): Unknown identifier "valueBO".
+# Error: COMP96_0078: RegisterFile.vhd : (75, 60): Unknown identifier "addressBO".
+# Error: COMP96_0133: RegisterFile.vhd : (75, 60): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (75, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (79, 20): Unknown identifier "addressTO".
+# Error: COMP96_0078: RegisterFile.vhd : (79, 32): Unknown identifier "regAddressE".
+# Error: COMP96_0078: RegisterFile.vhd : (79, 48): Unknown identifier "regWriteE".
+# Error: COMP96_0133: RegisterFile.vhd : (79, 48): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (79, 20): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (79, 19): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (80, 21): Unknown identifier "valueCO".
+# Error: COMP96_0078: RegisterFile.vhd : (80, 32): Unknown identifier "regDataE".
+# Error: COMP96_0133: RegisterFile.vhd : (80, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (81, 23): Unknown identifier "addressTO".
+# Error: COMP96_0078: RegisterFile.vhd : (81, 35): Unknown identifier "regAddressO".
+# Error: COMP96_0078: RegisterFile.vhd : (81, 51): Unknown identifier "regWriteO".
+# Error: COMP96_0133: RegisterFile.vhd : (81, 51): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (81, 23): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (81, 22): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (82, 21): Unknown identifier "valueCO".
+# Error: COMP96_0078: RegisterFile.vhd : (82, 32): Unknown identifier "regDataO".
+# Error: COMP96_0133: RegisterFile.vhd : (82, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (84, 21): Unknown identifier "valueCO".
+# Error: COMP96_0078: RegisterFile.vhd : (84, 60): Unknown identifier "addressTO".
+# Error: COMP96_0133: RegisterFile.vhd : (84, 60): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (84, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (88, 20): Unknown identifier "addressAE".
+# Error: COMP96_0078: RegisterFile.vhd : (88, 32): Unknown identifier "regAddressE".
+# Error: COMP96_0078: RegisterFile.vhd : (88, 48): Unknown identifier "regWriteE".
+# Error: COMP96_0133: RegisterFile.vhd : (88, 48): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (88, 20): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (88, 19): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (89, 21): Unknown identifier "valueAE".
+# Error: COMP96_0078: RegisterFile.vhd : (89, 32): Unknown identifier "regDataE".
+# Error: COMP96_0133: RegisterFile.vhd : (89, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (90, 23): Unknown identifier "addressAE".
+# Error: COMP96_0078: RegisterFile.vhd : (90, 35): Unknown identifier "regAddressO".
+# Error: COMP96_0078: RegisterFile.vhd : (90, 51): Unknown identifier "regWriteO".
+# Error: COMP96_0133: RegisterFile.vhd : (90, 51): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (90, 23): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (90, 22): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (91, 21): Unknown identifier "valueAE".
+# Error: COMP96_0078: RegisterFile.vhd : (91, 32): Unknown identifier "regDataO".
+# Error: COMP96_0133: RegisterFile.vhd : (91, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (93, 21): Unknown identifier "valueAE".
+# Error: COMP96_0078: RegisterFile.vhd : (93, 60): Unknown identifier "addressAE".
+# Error: COMP96_0133: RegisterFile.vhd : (93, 60): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (93, 21): Cannot find object declaration.
+# Error: COMP96_0078: RegisterFile.vhd : (97, 20): Unknown identifier "addressBE".
+# Error: COMP96_0078: RegisterFile.vhd : (97, 32): Unknown identifier "regAddressE".
+# Error: COMP96_0078: RegisterFile.vhd : (97, 48): Unknown identifier "regWriteE".
+# Error: COMP96_0133: RegisterFile.vhd : (97, 48): Cannot find object declaration.
+# Error: COMP96_0133: RegisterFile.vhd : (97, 20): Cannot find object declaration.
+# Error: COMP96_0077: RegisterFile.vhd : (97, 19): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: RegisterFile.vhd : (98, 21): Unknown identifier "valueBE".
+# Compile failure 100 Errors 3 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/RegisterFile.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/FowardingUnit.vhd $dsn/src/ALUPortDecode.vhd $dsn/src/RegisterFile.vhd "$dsn/src/Even Units/ShiftEven.vhd" "$dsn/src/Even Units/ShiftPickerEven.vhd" "$dsn/src/Even Units/EvenWriteBack.vhd" "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd" "$dsn/src/Odd Units/ShiftOdd.vhd" "$dsn/src/Odd Units/ShiftPickerOdd.vhd" "$dsn/src/Odd Units/OddWriteBack.vhd" "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd" "$dsn/src/Instruction Fetch/InstructionBuffer.vhd" "$dsn/src/Instruction Fetch/ProgramCounter.vhd" "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd
+# Compile Entity "ShiftPickerEven"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd
+# Compile Entity "OddWriteBack"
+# Compile Architecture "Behavioral" of Entity "OddWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Error: COMP96_0078: Instruction Fetch/InstructionBuffer.vhd : (21, 53): Unknown identifier "WORDESIZE".
+# Error: COMP96_0094: Instruction Fetch/InstructionBuffer.vhd : (21, 47): Locally static expression is required in the range definition.
+# Error: COMP96_0078: Instruction Fetch/InstructionBuffer.vhd : (22, 54): Unknown identifier "WORDESIZE".
+# Error: COMP96_0094: Instruction Fetch/InstructionBuffer.vhd : (22, 48): Locally static expression is required in the range definition.
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Error: COMP96_0056: Instruction Fetch/InstructionBuffer.vhd : (27, 1): Cannot find referenced entity declaration "InstructionBuffer".
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd" is empty.
+# Compile failure 5 Errors 5 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionBuffer.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Error: COMP96_0078: Instruction Fetch/InstructionBuffer.vhd : (35, 17): Unknown identifier "instruction".
+# Error: COMP96_0133: Instruction Fetch/InstructionBuffer.vhd : (35, 17): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionBuffer.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Error: COMP96_0367: Instruction Fetch/InstructionBuffer.vhd : (35, 75): Improper array length (33). Expected length is 32.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionBuffer.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionBuffer.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/ProgramCounter.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd
+# Compile Entity "ProgramCounter"
+# Compile Architecture "behavioral" of Entity "ProgramCounter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Error: COMP96_0078: Instruction Fetch/InstructionFetchUnit.vhd : (36, 4): Unknown identifier "stall".
+# Error: COMP96_0078: Instruction Fetch/InstructionFetchUnit.vhd : (38, 4): Unknown identifier "instruction".
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (33, 17): Improper array length (6). Expected length is 8.
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (34, 14): Improper array length (25). Expected length is 33.
+# Error: COMP96_0133: Instruction Fetch/InstructionFetchUnit.vhd : (36, 4): Cannot find object declaration.
+# Error: COMP96_0112: Instruction Fetch/InstructionFetchUnit.vhd : (36, 4): "stall" does not match the formal name.
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (32, 3): No actual specified for local port "count".
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (32, 3): No actual specified for local port "clock".
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (46, 20): Improper array length (6). Expected length is 8.
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (47, 13): Improper array length (6). Expected length is 8.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Error: COMP96_0078: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Unknown identifier "stall".
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (35, 14): Improper array length (32). Expected length is 33.
+# Error: COMP96_0133: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Cannot find object declaration.
+# Error: COMP96_0112: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): "stall" does not match the formal name.
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "count".
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "clock".
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (49, 13): Improper array length (6). Expected length is 8.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionBuffer.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Error: COMP96_0078: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Unknown identifier "stall".
+# Error: COMP96_0133: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Cannot find object declaration.
+# Error: COMP96_0112: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): "stall" does not match the formal name.
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "count".
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "clock".
+# Error: COMP96_0367: Instruction Fetch/InstructionFetchUnit.vhd : (49, 13): Improper array length (6). Expected length is 8.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Error: COMP96_0078: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Unknown identifier "stall".
+# Error: COMP96_0133: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): Cannot find object declaration.
+# Error: COMP96_0112: Instruction Fetch/InstructionFetchUnit.vhd : (37, 4): "stall" does not match the formal name.
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "count".
+# Error: COMP96_0207: Instruction Fetch/InstructionFetchUnit.vhd : (33, 3): No actual specified for local port "clock".
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0027: Constants.vhd : (24, 20): Discrete range expected.
+# Error: COMP96_0015: Constants.vhd : (25, 7): ';' expected.
+# Error: COMP96_0016: Constants.vhd : (25, 13): Design unit declaration expected.
+# Error: COMP96_0018: Constants.vhd : (28, 12): Identifier expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0664: Constants.vhd : (24, 19): Value 0 out of range 1 to 2147483647.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 48): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 48): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 48): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 48): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 48): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (20, 40): Identifier expected.
+# Error: COMP96_0015: Constants.vhd : (24, 7): ';' expected.
+# Error: COMP96_0016: Constants.vhd : (24, 13): Design unit declaration expected.
+# Error: COMP96_0018: Constants.vhd : (31, 12): Identifier expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0015: Constants.vhd : (26, 3): ';' expected.
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0020: Constants.vhd : (26, 3): Variable can be declared only in a process or subprogram.
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (26, 32): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0015: Constants.vhd : (29, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (30, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (31, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (32, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (33, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (34, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (35, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (36, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (37, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (38, 20): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (39, 21): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (40, 21): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (41, 21): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (42, 21): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (43, 21): ')' expected.
+# Error: COMP96_0015: Constants.vhd : (44, 21): ')' expected.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 59): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0018: Constants.vhd : (28, 20): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (28, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 44): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 41): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 41): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 41): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Error: COMP96_0029: Constants.vhd : (34, 41): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (53, 22): Unknown identifier "TABLE".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (53, 22): Cannot find object declaration.
+# Error: COMP96_0251: InstructionFetchDecode.vhd : (53, 22): Discrete range in the iteration scheme is invalid.
+# Error: COMP96_0138: InstructionFetchDecode.vhd : (54, 74): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: InstructionFetchDecode.vhd : (54, 32): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: InstructionFetchDecode.vhd : (55, 40): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 9): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (177, 18): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0018: InstructionFetchDecode.vhd : (145, 96): Identifier expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (178, 9): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (178, 18): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 9): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (177, 18): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 33): Keyword 'begin' expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (179, 10): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (179, 19): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 33): Keyword 'begin' expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (179, 10): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (179, 19): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 33): Keyword 'begin' expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (179, 10): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (179, 19): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (178, 33): Keyword 'begin' expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (180, 10): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (180, 19): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (177, 33): Keyword 'begin' expected.
+# Error: COMP96_0019: InstructionFetchDecode.vhd : (179, 10): Keyword 'end' expected.
+# Error: COMP96_0016: InstructionFetchDecode.vhd : (179, 19): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (147, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (148, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (149, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (150, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (151, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (151, 23): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (152, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (153, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (154, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (155, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (156, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (156, 22): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (157, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (163, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (164, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (165, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (166, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (167, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (167, 23): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (168, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (169, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (170, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (171, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (172, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (172, 22): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (173, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Compile failure 26 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (175, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (176, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (177, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (178, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (179, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (179, 26): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (180, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (181, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (182, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (183, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (184, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (184, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (185, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (192, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (193, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (194, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (195, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (196, 13): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (196, 13): Cannot find object declaration.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (197, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (198, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (199, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (200, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (201, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (201, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (202, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (267, 9): Unknown identifier "ALUOP".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (267, 9): Cannot find object declaration.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (280, 19): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (280, 19): Cannot find object declaration.
+# Error: COMP96_0077: InstructionFetchDecode.vhd : (280, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 31 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0123: InstructionFetchDecode.vhd : (177, 13): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (178, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (179, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (180, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (181, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (181, 26): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (182, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (183, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (184, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (185, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (186, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (186, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (187, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (194, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (195, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (196, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (197, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (198, 13): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (198, 13): Cannot find object declaration.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (199, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (200, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (201, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (202, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (203, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (203, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (204, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (226, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (229, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (241, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (257, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (270, 9): Unknown identifier "ALUOP".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (270, 9): Cannot find object declaration.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (283, 19): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (283, 19): Cannot find object declaration.
+# Error: COMP96_0077: InstructionFetchDecode.vhd : (283, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 35 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0123: InstructionFetchDecode.vhd : (177, 13): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (178, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (179, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (180, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (181, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (181, 26): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (182, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (183, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (184, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (185, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (186, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (186, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (187, 13): The target of this assignment must be a formal of the subprogram "assignInstructionOdd" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (194, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (195, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (196, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (197, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (198, 13): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (198, 13): Cannot find object declaration.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (199, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (200, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (201, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (202, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (203, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (203, 25): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0161: InstructionFetchDecode.vhd : (204, 13): The target of this assignment must be a formal of the subprogram "assignInstructionEven" or one of its parents.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (226, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (229, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (241, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0153: InstructionFetchDecode.vhd : (257, 0): Formal "rbO" of class variable must be associated with a variable.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (270, 9): Unknown identifier "ALUOP".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (270, 9): Cannot find object declaration.
+# Error: COMP96_0078: InstructionFetchDecode.vhd : (283, 19): Unknown identifier "ALUOPESig".
+# Error: COMP96_0133: InstructionFetchDecode.vhd : (283, 19): Cannot find object declaration.
+# Error: COMP96_0077: InstructionFetchDecode.vhd : (283, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 35 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (166, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (171, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (179, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (184, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (193, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (198, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (206, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (211, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (225, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (230, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (245, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (250, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (267, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (272, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (281, 35): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (286, 34): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/FowardingUnit.vhd $dsn/src/ALUPortDecode.vhd $dsn/src/RegisterFile.vhd $dsn/src/InstructionFetchDecode.vhd "$dsn/src/Even Units/ShiftEven.vhd" "$dsn/src/Even Units/ShiftPickerEven.vhd" "$dsn/src/Even Units/EvenWriteBack.vhd" "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd" "$dsn/src/Odd Units/ShiftOdd.vhd" "$dsn/src/Odd Units/ShiftPickerOdd.vhd" "$dsn/src/Odd Units/OddWriteBack.vhd" "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd" "$dsn/src/Instruction Fetch/InstructionBuffer.vhd" "$dsn/src/Instruction Fetch/ProgramCounter.vhd" "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd
+# Compile Entity "ShiftPickerEven"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd
+# Compile Entity "OddWriteBack"
+# Compile Architecture "Behavioral" of Entity "OddWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd
+# Compile Entity "ProgramCounter"
+# Compile Architecture "behavioral" of Entity "ProgramCounter"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Compile success 0 Errors 3 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (13, 5): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (13, 5): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (13, 6): Keyword 'end' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (14, 1): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/FowardingUnit.vhd $dsn/src/ALUPortDecode.vhd $dsn/src/RegisterFile.vhd $dsn/src/InstructionFetchDecode.vhd "$dsn/src/Even Units/ShiftEven.vhd" "$dsn/src/Even Units/ShiftPickerEven.vhd" "$dsn/src/Even Units/EvenWriteBack.vhd" "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd" "$dsn/src/Odd Units/ShiftOdd.vhd" "$dsn/src/Odd Units/ShiftPickerOdd.vhd" "$dsn/src/Odd Units/OddWriteBack.vhd" "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd" "$dsn/src/Instruction Fetch/InstructionBuffer.vhd" "$dsn/src/Instruction Fetch/ProgramCounter.vhd" "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (13, 5): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (13, 5): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (13, 6): Keyword 'end' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (14, 1): Design unit declaration expected.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd
+# Compile Entity "ShiftPickerEven"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd
+# Compile Entity "OddWriteBack"
+# Compile Architecture "Behavioral" of Entity "OddWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd
+# Compile Entity "ProgramCounter"
+# Compile Architecture "behavioral" of Entity "ProgramCounter"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Compile failure 4 Errors 2 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (91, 26): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (91, 26): ';' expected.
+# Error: COMP96_0036: FowardingUnit.vhd : (95, 16): Boolean expression expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (97, 17): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (99, 13): Keyword 'begin' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (99, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (91, 26): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (91, 26): ';' expected.
+# Error: COMP96_0036: FowardingUnit.vhd : (95, 16): Boolean expression expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (97, 17): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (99, 13): Keyword 'begin' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (99, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (91, 26): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (91, 26): ';' expected.
+# Error: COMP96_0036: FowardingUnit.vhd : (95, 16): Boolean expression expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (97, 17): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (99, 13): Keyword 'begin' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (99, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (91, 26): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (91, 26): ';' expected.
+# Error: COMP96_0036: FowardingUnit.vhd : (95, 16): Boolean expression expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (97, 17): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (99, 13): Keyword 'begin' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (99, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0028: FowardingUnit.vhd : (91, 26): Identifier or keyword expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (91, 26): ';' expected.
+# Error: COMP96_0036: FowardingUnit.vhd : (95, 16): Boolean expression expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (97, 17): ';' expected.
+# Error: COMP96_0019: FowardingUnit.vhd : (99, 13): Keyword 'begin' expected.
+# Error: COMP96_0016: FowardingUnit.vhd : (99, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0015: FowardingUnit.vhd : (107, 33): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (107, 36): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (108, 32): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (108, 35): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (109, 29): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (109, 32): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (110, 31): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (110, 34): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (111, 31): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (111, 34): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (112, 30): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (112, 33): Identifier expected.
+# Error: COMP96_0015: FowardingUnit.vhd : (113, 29): ':' expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (113, 32): Identifier expected.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0018: FowardingUnit.vhd : (107, 35): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (108, 34): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (109, 31): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (110, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (111, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (112, 32): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (113, 31): Identifier expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0018: FowardingUnit.vhd : (107, 35): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (108, 34): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (109, 31): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (110, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (111, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (112, 32): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (113, 31): Identifier expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0018: FowardingUnit.vhd : (107, 35): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (108, 34): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (109, 31): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (110, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (111, 33): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (112, 32): Identifier expected.
+# Error: COMP96_0018: FowardingUnit.vhd : (113, 31): Identifier expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0393: FowardingUnit.vhd : (120, 12): Cannot read output : "outputForwardFlag".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0393: FowardingUnit.vhd : (120, 12): Cannot read output : "outputForwardFlag".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Error: COMP96_0393: FowardingUnit.vhd : (185, 57): Cannot read output : "forwardAE".
+# Error: COMP96_0393: FowardingUnit.vhd : (186, 57): Cannot read output : "forwardBE".
+# Error: COMP96_0393: FowardingUnit.vhd : (187, 57): Cannot read output : "forwardCE".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (165, 23): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (170, 22): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (195, 23): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: InstructionFetchDecode.vhd : (200, 22): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (221, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (222, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (225, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (226, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (230, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (237, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (250, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (253, 114): Improper array length (3). Expected length is 4.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (221, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (222, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (225, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (226, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (230, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (237, 114): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (250, 115): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: InstructionFetchDecode.vhd : (253, 114): Improper array length (3). Expected length is 4.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Warning: COMP96_0367: InstructionFetchDecode.vhd : (170, 22): Improper array length (4). Expected length is 3.
+# Warning: COMP96_0367: InstructionFetchDecode.vhd : (200, 22): Improper array length (4). Expected length is 3.
+# Compile success 0 Errors 2 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/InstructionFetchDecode.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/FowardingUnit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/Constants.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]

@@ -12,21 +12,21 @@ entity OddWriteBack is
         --Inputs
         clock : in std_logic;
 
+        --Control signals from branch unit
+        blockIn : in std_logic;
+        branchIndex : in std_logic_vector(7 downto 0);
+
         --Inputs for pipe 5
-        valMemLS : in std_logic_vector(const.WIDTH - 1 downto 0);
         regWriteLS : in std_logic;
         rtLS : in std_logic_vector(6 downto 0);
         resultLS : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountLS : in std_logic_vector(7 downto 0);
         
         --Inputs for pipe 6
         regWriteP : in std_logic;
         rtP : in std_logic_vector(6 downto 0);
         resultP : in std_logic_vector(const.WIDTH - 1 downto 0);
-        
-        --Inputs for pipe 7
-        regWriteB : in std_logic;
-        rtB : in std_logic_vector(6 downto 0);
-        resultB : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountP : in std_logic_vector(7 downto 0);
         
         --Outputs
         rtR : out std_logic_vector(6 downto 0);
@@ -41,18 +41,14 @@ architecture Behavioral of OddWriteBack is
         WriteBack : process (clock)
         begin
             if rising_edge(clock) then
-                if regWriteLS = '1' then
+                if (regWriteLS = '1' and ((blockIn = '1' and instructionCountLS < branchIndex) or blockIn = '0')) then
                     rtR <= rtLS;
-                    resultR <= valMemLS;
+                    resultR <= resultLS;
                     regWriteR <= regWriteLS;
-                elsif regWriteP = '1' then
+                elsif (regWriteP = '1' and ((blockIn = '1' and instructionCountP < branchIndex) or blockIn = '0')) then
                     rtR <= rtP;
                     resultR <= resultP;
                     regWriteR <= regWriteP;
-                elsif regWriteB = '1' then
-                    rtR <= rtB;
-                    resultR <= resultB;
-                    regWriteR <= regWriteB;
                 else
                     rtR <= (others => '0');
                     resultR <= (others => '0');

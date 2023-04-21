@@ -25,3 +25,4 @@ i<>.\src\InstructionBuffer.vhd
 i<>.\src\ProgramCounter.vhd
 i<>.\src\InstructionFetchUnit.vhd
 i<>.\src\InstructionFetchDecode.vhd
+i<>.\src\Odd Units\BranchUnit.vhd

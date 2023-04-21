@@ -18,6 +18,7 @@ entity ShiftOdd is
         I16O : in std_logic_vector(15 downto 0);
         I18O : in std_logic_vector(17 downto 0);
         typeO : in std_logic_vector(2 downto 0);
+        instructionCountO : in std_logic_vector(7 downto 0);
         regWriteO : in std_logic;
 
         --Outputs
@@ -27,6 +28,7 @@ entity ShiftOdd is
         I16OOut: out std_logic_vector(15 downto 0);
         I18OOut: out std_logic_vector(17 downto 0);
         typeOOut: out std_logic_vector(2 downto 0);
+        instructionCountOOut: out std_logic_vector(7 downto 0);
         regWriteOOut: out std_logic
     );
 end ShiftOdd;
@@ -42,6 +44,7 @@ architecture Behavioral of ShiftOdd is
                     I16OOut<= I16O;
                     I18OOut<= I18O;
                     typeOOut<= typeO;
+                    instructionCountOOut<= instructionCountO;
                     regWriteOOut<= regWriteO;
                 end if;
             end process;

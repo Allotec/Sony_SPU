@@ -15,11 +15,15 @@ entity LocalStore is
         regWrite : in std_logic;
         rt : in std_logic_vector(6 downto 0);
         address : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCount : in std_logic_vector(7 downto 0);
+        branchIndex : in std_logic_vector(7 downto 0);
+        blockIn : in std_logic;
 
         --Outputs
         regWriteOut : out std_logic;
         rtOut : out std_logic_vector(6 downto 0);
-        resultOut : out std_logic_vector(const.WIDTH - 1 downto 0) 
+        resultOut : out std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCountOut : out std_logic_vector(7 downto 0)
     );
 end LocalStore;
 
@@ -40,34 +44,46 @@ architecture Behavioral of LocalStore is
 
     begin						   
 		LocalStorage : process(clk)
-		variable readWriteBit : std_logic := address(19);
-        variable address : std_logic_vector(17 downto 0) := address(17 downto 0);
+		variable readWriteBit : std_logic;
+        variable addressVar : std_logic_vector(17 downto 0);
         begin																	
             if rising_edge(clk) then
-                --Read
-                if readWriteBit = '0' then
-                    regWriteOut <= regWrite;
-                    rtOut <= rt;
-					
-					for i in 0 to const.BYTES - 1 loop
-            			resultOut(i * const.BYTE_SIZE + const.BYTE_SIZE - 1 downto i * const.BYTE_SIZE) <= mem(intU(address) + i);
-        			end loop;
-                --Write
-                elsif readWriteBit = '1' then
-                    regWriteOut <= '0';
-                    rtOut <= rt;
-                    resultOut <= (others => '0');  
-					
-                    for i in 0 to const.BYTES - 1 loop
-            			mem(intU(address) + i) <= valMem(i * const.BYTE_SIZE + const.BYTE_SIZE - 1 downto i * const.BYTE_SIZE);
-        			end loop;
-                --Do Nothing
-                else
+                readWriteBit := address(18);
+                addressVar := address(17 downto 0);
+                --If the block is false or the instruction count is less than the branch index
+                --Then proceed
+                if blockIn = '0' or (blockIn = '1' and instructionCount < branchIndex) then
+                    --Read
+                    if readWriteBit = '0' and regWrite = '1' then
+                        regWriteOut <= regWrite;
+                        rtOut <= rt;
+					    
+					    for i in 0 to const.BYTES - 1 loop
+            			    resultOut(i * const.BYTE_SIZE + const.BYTE_SIZE - 1 downto i * const.BYTE_SIZE) <= mem(intU(address) + i);
+        			    end loop;
+                    --Write
+                    elsif readWriteBit = '1' and regWrite = '1' then
+                        regWriteOut <= '0';
+                        rtOut <= rt;
+                        resultOut <= (others => '0');  
+					    
+                        for i in 0 to const.BYTES - 1 loop
+            			    mem(intU(addressVar) + i) <= valMem(i * const.BYTE_SIZE + const.BYTE_SIZE - 1 downto i * const.BYTE_SIZE);
+        			    end loop;
+                    --Do Nothing
+                    else
+                        regWriteOut <= '0';
+                        rtOut <= (others => '0');
+                        resultOut <= (others => '0');
+                    end if;
+                else 
                     regWriteOut <= '0';
                     rtOut <= (others => '0');
                     resultOut <= (others => '0');
                 end if;
             end if;
         end process;
+
+    instructionCountOut <= instructionCount;
 end Behavioral;
 

@@ -15,12 +15,16 @@ entity shiftPipeLS is
         regWrite : in std_logic;
         rt : in std_logic_vector(6 downto 0);
         address : in std_logic_vector(const.WIDTH - 1 downto 0);
+        instructionCount : in std_logic_vector(7 downto 0);
+        branchIndex : in std_logic_vector(7 downto 0);
+        blockIn : in std_logic;
 
         --Outputs
         --To the write back register
         resultOut : out std_logic_vector(const.WIDTH - 1 downto 0);
         rtOut : out std_logic_vector(6 downto 0);
         regWriteOut : out std_logic;
+        instructionCountOut : out std_logic_vector(7 downto 0); 
 
         --To the fowarding Unit
         resultF : out std_logic_vector(const.WIDTH - 1 downto 0);
@@ -35,34 +39,41 @@ architecture structure of shiftPipeLS is
     signal regWrite1 : std_logic;
     signal rt1 : std_logic_vector(6 downto 0);
     signal address1 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount1 : std_logic_vector(7 downto 0);
 
     signal valMem2 : std_logic_vector(const.WIDTH - 1 downto 0);
     signal regWrite2 : std_logic;
     signal rt2 : std_logic_vector(6 downto 0);
     signal address2 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount2 : std_logic_vector(7 downto 0);
 
     signal valMem3 : std_logic_vector(const.WIDTH - 1 downto 0);
     signal regWrite3 : std_logic;
     signal rt3 : std_logic_vector(6 downto 0);
     signal address3 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount3 : std_logic_vector(7 downto 0);
 
     signal valMem4 : std_logic_vector(const.WIDTH - 1 downto 0);
     signal regWrite4 : std_logic;
     signal rt4 : std_logic_vector(6 downto 0);
     signal address4 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount4 : std_logic_vector(7 downto 0);
 
     signal valMem5 : std_logic_vector(const.WIDTH - 1 downto 0);
     signal regWrite5 : std_logic;
     signal rt5 : std_logic_vector(6 downto 0);
     signal address5 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount5 : std_logic_vector(7 downto 0);
 
     signal regWriteOut1 : std_logic;
     signal rtOut1 : std_logic_vector(6 downto 0);
     signal resultOut1 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount6 : std_logic_vector(7 downto 0);
 
     signal regWriteOut2 : std_logic;
     signal rtOut2 : std_logic_vector(6 downto 0);
     signal resultOut2 : std_logic_vector(const.WIDTH - 1 downto 0);
+    signal instructionCount7 : std_logic_vector(7 downto 0);
 
     begin 
         u0 : entity LSPipe port map(
@@ -71,11 +82,13 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite,
             rt => rt,
             address => address,
+            instructionCount => instructionCount,
 
             valMemOut => valMem1,
             regWriteOut => regWrite1,
             rtOut => rt1,
-            addressOut => address1
+            addressOut => address1,
+            instructionCountOut => instructionCount1
         );
 
         u1 : entity LSPipe port map(
@@ -84,11 +97,13 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite1,
             rt => rt1,
             address => address1,
+            instructionCount => instructionCount1,
 
             valMemOut => valMem2,
             regWriteOut => regWrite2,
             rtOut => rt2,
-            addressOut => address2
+            addressOut => address2,
+            instructionCountOut => instructionCount2
         );
 
         u2 : entity LSPipe port map(
@@ -97,11 +112,13 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite2,
             rt => rt2,
             address => address2,
+            instructionCount => instructionCount2,
 
             valMemOut => valMem3,
             regWriteOut => regWrite3,
             rtOut => rt3,
-            addressOut => address3
+            addressOut => address3,
+            instructionCountOut => instructionCount3
         );
 
         u3 : entity LSPipe port map(
@@ -110,11 +127,13 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite3,
             rt => rt3,
             address => address3,
+            instructionCount => instructionCount3,
 
             valMemOut => valMem4,
             regWriteOut => regWrite4,
             rtOut => rt4,
-            addressOut => address4
+            addressOut => address4,
+            instructionCountOut => instructionCount4
         );
 
         u4 : entity LSPipe port map(
@@ -123,11 +142,13 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite4,
             rt => rt4,
             address => address4,
+            instructionCount => instructionCount4,
 
             valMemOut => valMem5,
             regWriteOut => regWrite5,
             rtOut => rt5,
-            addressOut => address5
+            addressOut => address5,
+            instructionCountOut => instructionCount5
         );
 
         u5 : entity LocalStore port map(
@@ -136,10 +157,14 @@ architecture structure of shiftPipeLS is
             regWrite => regWrite5,
             rt => rt5,
             address => address5,
+            instructionCount => instructionCount5,
+            branchIndex => branchIndex,
+            blockIn => blockIn,
 
             regWriteOut => regWriteOut1,
             rtOut => rtOut1,
-            resultOut => resultOut1
+            resultOut => resultOut1,
+            instructionCountOut => instructionCount6
         );
         
         u6 : entity shiftPipe port map(
@@ -147,16 +172,19 @@ architecture structure of shiftPipeLS is
             result => resultOut1,
             regWrite => regWriteOut1,
             rt => rtOut1,
+            instructionCount => instructionCount6,
 
             resultOut => resultOut2,
             rtOut => rtOut2,
-            regWriteOut => regWriteOut2
+            regWriteOut => regWriteOut2,
+            instructionCountOut => instructionCount7
         );
 
         --To the write back register
         resultOut <= resultOut2;
         rtOut <= rtOut2;
         regWriteOut <= regWriteOut2;
+        instructionCountOut <= instructionCount7;
 
         --To the fowarding Unit
         resultF <= resultOut1;

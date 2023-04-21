@@ -1,0 +1,87 @@
+acom -O3 -e 100 -work cell_cpu -2002  $dsn/src/ALU.vhd $dsn/src/ALU_tb.vhd $dsn/src/Constants.vhd $dsn/src/FowardingUnit.vhd $dsn/src/ALUPortDecode.vhd $dsn/src/RegisterFile.vhd $dsn/src/InstructionFetchDecode.vhd "$dsn/src/Even Units/ShiftEven.vhd" "$dsn/src/Even Units/ShiftPickerEven.vhd" "$dsn/src/Even Units/EvenWriteBack.vhd" "$dsn/src/Even Units/shiftPipe.vhd" "$dsn/src/Even Units/SPIMAPipe.vhd" "$dsn/src/Even Units/SPFPPipe.vhd" "$dsn/src/Even Units/BytePipe.vhd" "$dsn/src/Even Units/SF2Pipe.vhd" "$dsn/src/Even Units/SF1Pipe.vhd" "$dsn/src/Odd Units/ShiftOdd.vhd" "$dsn/src/Odd Units/ShiftPickerOdd.vhd" "$dsn/src/Odd Units/OddWriteBack.vhd" "$dsn/src/Odd Units/LSPipe.vhd" "$dsn/src/Odd Units/BranchPipe.vhd" "$dsn/src/Odd Units/PermutePipe.vhd" "$dsn/src/Odd Units/shiftPipeLS.vhd" "$dsn/src/Odd Units/LocalStore.vhd" "$dsn/src/Instruction Fetch/InstructionBuffer.vhd" "$dsn/src/Instruction Fetch/ProgramCounter.vhd" "$dsn/src/Instruction Fetch/InstructionFetchUnit.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd
+# Warning: COMP96_0003: Source file "C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALU_tb.vhd" is empty.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Constants.vhd
+# Compile Package "const"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/FowardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "Behavioral" of Entity "ForwardingUnit"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/ALUPortDecode.vhd
+# Compile Entity "ALUPortDecode"
+# Error: COMP96_0122: ALUPortDecode.vhd : (32, 9): Symbol "valueA" has already been declared in this scope.
+# Error: COMP96_0122: ALUPortDecode.vhd : (34, 9): Symbol "valueB" has already been declared in this scope.
+# Error: COMP96_0122: ALUPortDecode.vhd : (36, 9): Symbol "valueC" has already been declared in this scope.
+# Compile Architecture "Behavioral" of Entity "ALUPortDecode"
+# Error: COMP96_0019: ALUPortDecode.vhd : (165, 5): Keyword 'process' expected.
+# Error: COMP96_0019: ALUPortDecode.vhd : (166, 0): Keyword 'end' expected.
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "behavioral" of Entity "RegisterFile"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/InstructionFetchDecode.vhd
+# Compile Entity "InstructionFetchDecode"
+# Compile Architecture "Behavioral" of Entity "InstructionFetchDecode"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftEven.vhd
+# Compile Entity "ShiftEven"
+# Compile Architecture "Behavioral" of Entity "ShiftEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/ShiftPickerEven.vhd
+# Compile Entity "ShiftPickerEven"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerEven"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/EvenWriteBack.vhd
+# Compile Entity "EvenWriteBack"
+# Compile Architecture "Behavioral" of Entity "EvenWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/shiftPipe.vhd
+# Compile Entity "shiftPipe"
+# Compile Architecture "Behavioral" of Entity "shiftPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPIMAPipe.vhd
+# Compile Entity "SPIMAPipe"
+# Compile Architecture "structure" of Entity "SPIMAPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SPFPPipe.vhd
+# Compile Entity "SPFPPipe"
+# Compile Architecture "structure" of Entity "SPFPPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/BytePipe.vhd
+# Compile Entity "BytePipe"
+# Compile Architecture "structure" of Entity "BytePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF2Pipe.vhd
+# Compile Entity "SF2Pipe"
+# Compile Architecture "structure" of Entity "SF2Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Even Units/SF1Pipe.vhd
+# Compile Entity "SF1Pipe"
+# Compile Architecture "structure" of Entity "SF1Pipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftOdd.vhd
+# Compile Entity "ShiftOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/ShiftPickerOdd.vhd
+# Compile Entity "ShiftPickerOdd"
+# Compile Architecture "Behavioral" of Entity "ShiftPickerOdd"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/OddWriteBack.vhd
+# Compile Entity "OddWriteBack"
+# Compile Architecture "Behavioral" of Entity "OddWriteBack"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LSPipe.vhd
+# Compile Entity "LSPipe"
+# Compile Architecture "Behavioral" of Entity "LSPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/BranchPipe.vhd
+# Compile Entity "BranchPipe"
+# Compile Architecture "structure" of Entity "BranchPipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/PermutePipe.vhd
+# Compile Entity "PermutePipe"
+# Compile Architecture "structure" of Entity "PermutePipe"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/shiftPipeLS.vhd
+# Compile Entity "shiftPipeLS"
+# Compile Architecture "structure" of Entity "shiftPipeLS"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Odd Units/LocalStore.vhd
+# Compile Entity "LocalStore"
+# Compile Architecture "Behavioral" of Entity "LocalStore"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionBuffer.vhd
+# Compile Entity "InstructionBuffer"
+# Compile Architecture "behavioral" of Entity "InstructionBuffer"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/ProgramCounter.vhd
+# Compile Entity "ProgramCounter"
+# Compile Architecture "behavioral" of Entity "ProgramCounter"
+# File: C:/Users/Matthew Champagne/OneDrive/Spring_2023/ESE_545/Cell_SPU_Project/CELL_SPU/CELL_CPU/src/Instruction Fetch/InstructionFetchUnit.vhd
+# Compile Entity "InstructionFetchUnit"
+# Compile Architecture "structure" of Entity "InstructionFetchUnit"
+# Compile failure 5 Errors 1 Warnings  Analysis time :  0.7 [s]
